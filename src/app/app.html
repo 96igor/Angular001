@@ -1,3 +1,5 @@
+<app-header title="Hello World"></app-header>
+
 <h1>Мои заметки</h1>
 
 <ul>
@@ -7,3 +9,5 @@
         <small>{{ note.createdAt | date:'short' }}</small>
     </li>
 </ul>
+
+<app-footer (subscribeClicked)="handleSubscribe()"></app-footer>
