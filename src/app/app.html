@@ -1,6 +1,6 @@
-<app-header title="Hello World"></app-header>
+<app-header [title]="title"></app-header>
 
-<h1>Мои заметки</h1>
+<h1 (dblclick)="showAlert()">Мои заметки</h1>
 
 <ul>
     <li *ngFor="let note of notes()">
@@ -9,5 +9,12 @@
         <small>{{ note.createdAt | date:'short' }}</small>
     </li>
 </ul>
+
+<h2>Добавить заметку</h2>
+
+<input type="text"[(ngModel)]="newNote().title" placeholder="Заголовок">
+<textarea [(ngModel)]="newNote().content" placeholder="Текст"></textarea><br>
+
+<button (click)="addNote()">Добавить</button>
 
 <app-footer (subscribeClicked)="handleSubscribe()"></app-footer>
