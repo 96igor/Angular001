@@ -1,5 +1,25 @@
-.footer {
-    background: #111111;
+footer {
+    width: 90%;
+    padding: 20px 5%;
+    background: #222;
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.copy {
+    color: #8b3939;
+    font-size: 20px;
+    font-weight: bolder;
+}
+
+button:hover {
+    transition: all 500ms ease;
+    transform: scale(1.05);
+}
+
+.subs p {
+    margin-bottom: 5px;
     color: #fff;
-    padding: 0;
 }
