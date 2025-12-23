@@ -19,7 +19,11 @@ export class Home {
 
   showAlert() {
     alert("You clicked");
-  }  
+  }
+
+  ngOnInit() {
+    this.NoteService.fetchNotes();
+  }
 
   protected get notes() {
     return this.NoteService.getNotes();
