@@ -1,9 +1,10 @@
 <h2>Детали заметки</h2>
 
 <p *ngIf="note">
-    <strong>{{ note.title }}</strong>
-    {{ note.content }}
+    <strong>{{ note.title | uppercase }}</strong>
+    {{ note.content | noteShortener }}
     <em>{{ note.createdAt | date:'medium' }}</em>
+    <strong>{{ amount | currency: 'EUR' }}</strong>    
 </p>
 
 <p *ngIf="!note">
