@@ -1,0 +1,28 @@
+.error {
+    color: red;
+}
+
+ h2 {
+    margin-bottom: 10px;
+ }
+
+ input {
+    outline: none;
+    border: 0;
+    padding: 10px 20px;
+    border-radius: 5px;
+    background: #2f878a;
+    color: #143e3f;
+    margin-right: 10px;
+ }
+
+ botton {
+    outline: none;
+    border: 0;
+    padding: 10px 20px;
+    border-radius: 5px;
+    background: #246c6e;
+    color: #123c3e;
+    cursor: pointer;
+    transition: all 500ms ease;
+ }
